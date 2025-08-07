@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="608.09" height="520.13"><svg id="SvgjsSvg1064" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 608.09 520.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #240d17;
+      }
+
+      .cls-3 {
+        fill: #6e103d;
+      }
+
+      .cls-4 {
+        fill: #db167a;
+      }
+
+      .cls-5 {
+        fill: #921c54;
+      }
+
+      .cls-6 {
+        fill: #e7358e;
+      }
+
+      .cls-7 {
+        fill: #470e28;
+      }
+
+      .cls-8 {
+        fill: #b71f67;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="SvgjsClipPath1063">
+      <path class="cls-1" d="M608.09,514.39l-294.48-254.33L0,520.13V0l313.61,260.06c.42-.42,294.48-260.06,294.48-260.06v514.39Z"></path>
+    </clipPath>
+  </defs>
+  <g>
+    <circle class="cls-6" cx="314.48" cy="259.52" r="239.03"></circle>
+    <circle class="cls-4" cx="314.48" cy="259.52" r="191.22"></circle>
+    <circle class="cls-8" cx="314.48" cy="259.52" r="143.42"></circle>
+    <circle class="cls-5" cx="314.48" cy="259.52" r="95.61"></circle>
+    <circle class="cls-3" cx="314.48" cy="259.52" r="47.81"></circle>
+  </g>
+  <g class="cls-9">
+    <g>
+      <circle class="cls-8" cx="314.48" cy="259.52" r="239.03"></circle>
+      <circle class="cls-5" cx="314.48" cy="259.52" r="191.22"></circle>
+      <circle class="cls-3" cx="314.48" cy="259.52" r="143.42"></circle>
+      <circle class="cls-7" cx="314.48" cy="259.52" r="95.61"></circle>
+      <circle class="cls-2" cx="314.48" cy="259.52" r="47.81"></circle>
+    </g>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
