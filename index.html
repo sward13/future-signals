@@ -661,6 +661,27 @@
             transform: translateY(0);
         }
     </style>
+    <!-- GA4 base tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRVXQ587R2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // Optional: mark environment explicitly for landing page
+        window.FS_ENV = 'prod';
+
+        gtag('js', new Date());
+        gtag('config', 'G-RRVXQ587R2', {
+            'send_page_view': true,
+            'custom_map': { 'dimension1': 'env' },
+            'linker': {
+                'domains': ['futuresignals.io', 'app.futuresignals.io']
+            }
+        });
+
+        // Attach environment as a user property
+        gtag('set', 'user_properties', { env: window.FS_ENV });
+    </script>
 </head>
 
 <body>
