@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msvalidate.01" content="3B8CDDD50C1F13705FA0843382311620" />
-    <title>Future Signals - Collect Signals, Build Trends</title>
+    <title>Future Signals — A Practice for Strategic Foresight</title>
     <!-- Primary SEO -->
     <meta name="description"
-        content="Future Signals helps designers, strategists, and curious teams capture what they notice, connect the dots, and turn observations into trends and implications." />
+        content="Future Signals is a workspace for strategic foresight. Turn observations into data, data into patterns, and patterns into futures that inform strategy." />
     <link rel="canonical" href="https://futuresignals.io/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Future Signals" />
-    <meta property="og:title" content="Catch Signals, Spark Futures | Future Signals" />
+    <meta property="og:title" content="Future Signals — A workspace for strategic foresight" />
     <meta property="og:description"
-        content="Capture what you notice. Connect the dots. Imagine what it means. Build trends from emerging signals." />
+        content="Turn observations into data, data into patterns, and patterns into futures that inform strategy." />
     <meta property="og:url" content="https://futuresignals.io/" />
     <meta property="og:image" content="https://futuresignals.io/images/og-future-signals.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -25,13 +25,13 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Catch Signals, Spark Futures | Future Signals" />
+    <meta name="twitter:title" content="Future Signals — A workspace for strategic foresight" />
     <meta name="twitter:description"
-        content="Capture what you notice. Connect the dots. Imagine what it means. Build trends from emerging signals." />
+        content="Turn observations into data, data into patterns, and patterns into futures that inform strategy." />
     <meta name="twitter:image" content="https://futuresignals.io/images/og-future-signals.jpg" />
 
     <!-- PWA / UX niceties -->
-    <meta name="theme-color" content="#0F172A" />
+    <meta name="theme-color" content="#F9F9F7" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,10 +50,6 @@
       }]
     }
     </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
@@ -61,658 +57,15 @@
     <meta name="apple-mobile-web-app-title" content="Future Signals" />
     <link rel="manifest" href="favicon/site.webmanifest" />
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
 
-        body {
-            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #CBD5E1;
-            background: #0F172A;
-            overflow-x: hidden;
-        }
-
-        /* Navigation */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(20px);
-            z-index: 1000;
-            padding: 1rem 0;
-            transition: all 0.3s ease;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            font-family: 'Roboto', sans-serif;
-            color: #fff;
-            text-decoration: none;
-            background: linear-gradient(to right, #60A5FA, #A78BFA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .logo img {
-            height: 45px;
-            /* adjust if needed */
-            width: auto;
-            display: block;
-        }
-
-        .nav-buttons {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .btn {
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 0.9rem;
-        }
-
-        .btn-outline {
-            color: #CBD5E1;
-            border: 2px solid #475569;
-            background: transparent;
-        }
-
-        .btn-outline:hover {
-            background: rgba(51, 65, 85, 0.5);
-            border-color: #60A5FA;
-            color: #fff;
-        }
-
-        .btn-primary {
-            background: linear-gradient(to right, #3B82F6, #A78BFA);
-            color: white;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
-            background: linear-gradient(to right, #2563EB, #8B5CF6);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            background: radial-gradient(ellipse at center, #1E293B 0%, #0F172A 70%);
-            overflow: hidden;
-            flex-direction: column;
-            gap: 2rem;
-            padding-top: 6rem;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="grad" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:%2360A5FA;stop-opacity:0.1"/><stop offset="100%" style="stop-color:%2360A5FA;stop-opacity:0"/></radialGradient><radialGradient id="grad2" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:%23A78BFA;stop-opacity:0.08"/><stop offset="100%" style="stop-color:%23A78BFA;stop-opacity:0"/></radialGradient></defs><circle cx="200" cy="200" r="150" fill="url(%23grad)"/><circle cx="800" cy="300" r="100" fill="url(%23grad2)"/><circle cx="600" cy="700" r="120" fill="url(%23grad)"/></svg>');
-            animation: float 20s ease-in-out infinite;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-
-            33% {
-                transform: translate(30px, -30px) rotate(120deg);
-            }
-
-            66% {
-                transform: translate(-20px, 20px) rotate(240deg);
-            }
-        }
-
-        .hero-content {
-            text-align: center;
-            max-width: 800px;
-            padding: 2rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: clamp(3rem, 8vw, 6rem);
-            font-weight: 600;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(to right, #FFFFFF, #60A5FA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.1;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.5s forwards;
-        }
-
-        .hero .subtitle {
-            font-size: 1.5rem;
-            color: #94A3B8;
-            margin-bottom: 3rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.8s forwards;
-        }
-
-        .hero .btn-primary {
-            font-size: 1.1rem;
-            padding: 1rem 2.5rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 1.1s forwards;
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Hero image appears under headings and fades to transparent */
-        .hero-image {
-            width: min(1100px, 92vw);
-            margin: 1rem auto 0;
-            position: relative;
-            z-index: 2;
-            opacity: 0;
-            animation: slideUp 1s ease-out 1.3s forwards;
-        }
-
-        .hero-image img {
-            display: block;
-            width: 100%;
-            height: auto;
-            /* Fade the bottom of the image to transparent so the page background shows through */
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
-            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-image::after {
-            content: '';
-            position: absolute;
-            inset: -14px;
-            /* extend beyond image to show glow */
-            border-radius: 12px;
-            box-shadow: 0 30px 80px rgba(96, 165, 250, 0.28),
-                0 0 60px rgba(96, 165, 250, 0.40);
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        /* Sections */
-        .section {
-            padding: 6rem 0;
-            position: relative;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 700;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #FFFFFF, #60A5FA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #94A3B8;
-            margin-bottom: 4rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Benefits Section */
-        .benefits {
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .benefit-card {
-            text-align: center;
-            padding: 2rem;
-            border-radius: 12px;
-            background: rgba(30, 41, 59, 0.5);
-            border: 1px solid #334155;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-10px);
-            background: rgba(30, 41, 59, 0.8);
-            border-color: #60A5FA;
-        }
-
-        .benefit-icon {
-            font-size: 2rem;
-            background: linear-gradient(to right, #3B82F6, #A78BFA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-        }
-
-        .benefit-card h3 {
-            color: #fff;
-            font-size: 1.5rem;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 1rem;
-        }
-
-        .benefit-card p {
-            color: #94A3B8;
-            line-height: 1.6;
-        }
-
-        /* Features Section */
-        .features {
-            background: #0F172A;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
-        }
-
-        .feature-card {
-            background: linear-gradient(145deg, rgba(30, 41, 59, 0.5) 0%, rgba(30, 41, 59, 0.2) 100%);
-            border-radius: 12px;
-            padding: 2.5rem;
-            border: 1px solid #334155;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #60A5FA, transparent);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            border-color: #60A5FA;
-            box-shadow: 0 20px 40px rgba(96, 165, 250, 0.1);
-        }
-
-        .feature-card:hover::before {
-            opacity: 1;
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            background: linear-gradient(to right, #3B82F6, #A78BFA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-card h3 {
-            color: #fff;
-            font-size: 1.5rem;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .feature-card p {
-            color: #94A3B8;
-            line-height: 1.7;
-        }
-
-        /* Social Proof */
-        .social-proof {
-            background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
-        }
-
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .testimonial {
-            background: rgba(30, 41, 59, 0.5);
-            border-radius: 12px;
-            padding: 2rem;
-            border: 1px solid #334155;
-            position: relative;
-        }
-
-        .testimonial::before {
-            content: '“';
-            ;
-            font-size: 4rem;
-            color: #60A5FA;
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            font-family: serif;
-            font-weight: 800;
-        }
-
-        .testimonial-text {
-            color: #CBD5E1;
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            padding-top: 1rem;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(to right, #3B82F6, #A78BFA);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-
-        .author-info h4 {
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 0.25rem;
-        }
-
-        .author-info p {
-            color: #94A3B8;
-            font-size: 0.9rem;
-        }
-
-        /* FAQ Section */
-        .faq {
-            background: #0F172A;
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid #334155;
-            margin-bottom: 1rem;
-        }
-
-        .faq-question {
-            width: 100%;
-            background: none;
-            border: none;
-            padding: 1.5rem 0;
-            text-align: left;
-            font-size: 1.2rem;
-            font-family: 'Roboto', sans-serif;
-            color: #fff;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-        }
-
-        .faq-question:hover {
-            color: #60A5FA;
-        }
-
-        .faq-answer {
-            padding: 0 0 1.5rem 0;
-            color: #94A3B8;
-            line-height: 1.6;
-            display: none;
-        }
-
-        .faq-answer.active {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .faq-icon {
-            transition: transform 0.3s ease;
-        }
-
-        .faq-icon.rotated {
-            transform: rotate(180deg);
-        }
-
-        /* Footer */
-        .footer {
-            background: #1E293B;
-            padding: 4rem 0 2rem;
-            border-top: 1px solid #334155;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-wrap: nowrap;
-            /* keep all four sections on one row */
-            gap: 2rem;
-            margin-bottom: 3rem;
-            overflow-x: visible;
-            /* no horizontal scroll */
-            align-items: flex-start;
-            /* align headings/bullets nicely at top */
-        }
-
-        .footer-section h3 {
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .footer-section p {
-            color: #94A3B8;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-            overflow-wrap: anywhere;
-        }
-
-        .footer-section {
-            flex: 1 1 0;
-            /* base flex; will be overridden by first-child/others below */
-            min-width: 0;
-            /* critical so text wraps within the column and doesn’t force scroll */
-        }
-
-        .footer-section:first-child {
-            flex: 2 1 0;
-            /* ~40% */
-        }
-
-        .footer-section:not(:first-child) {
-            flex: 1 1 0;
-            /* ~20% each */
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-links a {
-            color: #94A3B8;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: #60A5FA;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255, 255, 255, 0.7);
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background: #667eea;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 0 1rem;
-            }
-
-            .hero {
-                padding: 6rem 1rem;
-            }
-
-            .hero h1 {
-                font-size: 3rem;
-            }
-
-            .hero .subtitle {
-                font-size: 1.2rem;
-            }
-
-            .section {
-                padding: 4rem 0;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
-            .section-title {
-                font-size: 2.5rem;
-            }
-
-            .benefits-grid,
-            .features-grid,
-            .testimonials {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Scroll animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
     <!-- GA4 base tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRVXQ587R2"></script>
     <script>
@@ -740,10 +93,11 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo"><img src="images/future_signals_logo_dark.png" alt="Future Signals"></a>
+            <a href="#" class="logo"><img src="images/future_signals_logo_light.svg" alt="Future Signals"></a>
             <div class="nav-buttons">
-                <a href="https://app.futuresignals.io/log-in" class="btn btn-outline">Login</a>
-                <a href="https://app.futuresignals.io/signup" class="btn btn-primary">Sign Up</a>
+                <a href="https://app.futuresignals.io/log-in" class="btn btn-outline">Log in</a>
+                <a href="mailto:sam@aldermanandward.com?subject=Future%20Signals%20access%20request"
+                    class="btn btn-primary">Request access</a>
             </div>
         </div>
     </nav>
@@ -751,86 +105,148 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Catch Signals, Spark Futures</h1>
-            <p class="subtitle">Future Signals is a tool to capture things you notice, and ask yourself where they might
-                lead. Observations into implications. Curiosity into possibility.</p>
-            <a href="https://app.futuresignals.io/signup" class="btn btn-primary">Start Building Trends</a>
+            <span class="eyebrow">A workspace for strategic foresight</span>
+            <h1>Think your way somewhere you couldn&rsquo;t have imagined <em>alone</em>.</h1>
+            <p class="subtitle">Capture signals, find patterns, shape futures. From sensemaking to strategy.</p>
+            <a href="mailto:sam@aldermanandward.com?subject=Future%20Signals%20access%20request"
+                class="btn btn-primary">Request access</a>
+            <p class="hero-caption">In private alpha.</p>
         </div>
-        <div class="hero-image"><img src="images/futuresignals_screenshot.png" alt="Future Signals"></div>
+        <div class="hero-image">
+            <span class="frame-corner corner-tl"></span>
+            <span class="frame-corner corner-br"></span>
+            <img src="images/futuresignals_screenshot.png" alt="Future Signals">
+        </div>
     </section>
 
-    <!-- how it works Section -->
-    <section class="section benefits">
+    <!-- The Work Section — the needs the product answers -->
+    <section class="section needs">
         <div class="container">
-            <h2 class="section-title fade-in">How it works</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Capture what you notice</h3>
-                    <p>Get it down before it slips away.</p>
+            <span class="eyebrow fade-in">Foresight today</span>
+            <h2 class="section-title fade-in">Where the work gets stuck</h2>
+            <div class="title-rule"></div>
+            <div class="needs-list">
+                <div class="need-item fade-in">
+                    <span class="need-number">No. 1</span>
+                    <h3>The signals are everywhere.</h3>
+                    <p>Saved posts, open tabs, a notes app, last quarter's Miro board. The raw material of
+                        your practice sits scattered across tools built for something else.</p>
                 </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-diagram-project"></i>
-                    </div>
-                    <h3>Connect the dots</h3>
-                    <p>Tags and grouping help understand emerging patterns</p>
+                <div class="need-item need-item-offset fade-in">
+                    <span class="need-number">No. 2</span>
+                    <h3>The pattern lives in your head.</h3>
+                    <p>You can feel how the pieces connect. Walking a client or a colleague along the path
+                        from signal to insight is the hardest part of the craft.</p>
                 </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-lightbulb"></i>
+                <div class="need-item fade-in">
+                    <span class="need-number">No. 3</span>
+                    <h3>The deliverable swallows the thinking.</h3>
+                    <p>Weeks of scanning and synthesis compress into three bullets for an executive
+                        audience, and the reasoning behind them disappears.</p>
+                </div>
+            </div>
+            <p class="needs-turn fade-in">Future Signals gives the practice a home: a structure that holds
+                your thinking, shows your work, and produces output you're proud to share.</p>
+        </div>
+    </section>
+
+    <!-- The Practice Section -->
+    <section class="section practice">
+        <div class="container">
+            <span class="eyebrow fade-in">Our workflow</span>
+            <h2 class="section-title fade-in">From signal to strategic decision.</h2>
+            <div class="title-rule"></div>
+            <div class="practice-list">
+                <div class="practice-row fade-in">
+                    <span class="practice-number">01</span>
+                    <div class="practice-stage">
+                        <h3 class="practice-name">Scan</h3>
+                        <span class="practice-feature">Signal Scanner &middot; Chrome extension</span>
                     </div>
-                    <h3>Imagine what it means</h3>
-                    <p>Fragments become implications and bigger stories about change</p>
+                    <p class="practice-desc">Build the evidence base for your inquiry. The Signal Scanner
+                        surfaces signals that match your key question, and the Chrome extension captures
+                        what you notice as you browse.</p>
+                </div>
+                <div class="practice-row fade-in">
+                    <span class="practice-number">02</span>
+                    <div class="practice-stage">
+                        <h3 class="practice-name">Cluster</h3>
+                        <span class="practice-feature">Pattern recognition</span>
+                    </div>
+                    <p class="practice-desc">Signals gain meaning in combination. Name the Trends, Drivers,
+                        and Tensions in your evidence; the system suggests groupings that reveal patterns you might have
+                        missed.</p>
+                </div>
+                <div class="practice-row fade-in">
+                    <span class="practice-number">03</span>
+                    <div class="practice-stage">
+                        <h3 class="practice-name">System Map</h3>
+                        <span class="practice-feature">Systems thinking</span>
+                    </div>
+                    <p class="practice-desc">Patterns interact. Map how forces drive, inhibit, and
+                        accelerate one another until the structure of the system becomes visible.</p>
+                </div>
+                <div class="practice-row fade-in">
+                    <span class="practice-number">04</span>
+                    <div class="practice-stage">
+                        <h3 class="practice-name">System Analysis</h3>
+                        <span class="practice-feature">System dynamics</span>
+                    </div>
+                    <p class="practice-desc">Interrogate the structure. Find the forces that hold the system
+                        in place and the tensions that could reshape it.</p>
+                </div>
+                <div class="practice-row fade-in">
+                    <span class="practice-number">05</span>
+                    <div class="practice-stage">
+                        <h3 class="practice-name">Future Models</h3>
+                        <span class="practice-feature">Scenarios &middot; Preferred Futures &middot; Strategic
+                            Options</span>
+                    </div>
+                    <p class="practice-desc">Write the scenarios, preferred futures, and strategic options
+                        that connect foresight to decisions.</p>
+                </div>
+            </div>
+            <p class="practice-note fade-in">Start anywhere. Move in any direction. A scenario can come
+                before the map when that's where your thinking is.</p>
+        </div>
+    </section>
+
+    <!-- Principles Section -->
+    <section class="section principles">
+        <div class="container">
+            <span class="eyebrow fade-in">Why Future Signals</span>
+            <h2 class="section-title fade-in">A framework for your thinking</h2>
+            <div class="title-rule"></div>
+            <div class="principles-grid">
+                <div class="principle fade-in">
+                    <h3>Never start from a blank page.</h3>
+                    <p>Each stage hands you a framework to leverage. Explore it, sharpen it, ship it.</p>
+                </div>
+                <div class="principle fade-in">
+                    <h3>Full traceability, from signal to scenario.</h3>
+                    <p>Every scenario traces back through the patterns and signals that produced it. 
+                        When someone asks how you got there, you can show them, not just tell them.</p>
+                </div>
+                <div class="principle fade-in">
+                    <h3>Rigor scales with your ambition.</h3>
+                    <p>One sharp question is enough to start. As the work matures, so does the structure holding it.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Benefits Section -->
-    <section class="section benefits">
-        <div class="container">
-            <h2 class="section-title fade-in">Why Future Signals?</h2>
-            <p class="section-subtitle fade-in">Transform how you detect and analyze emerging trends</p>
-            <div class="benefits-grid">
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Practice attention</h3>
-                    <p>Sharpen your observation skills and curiosity</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-folder-tree"></i>
-                    </div>
-                    <h3>Just enough structure</h3>
-                    <p>Light scaffolding, no platform bloat</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>For creative observers</h3>
-                    <p>Designers, writers, strategists, and curious minds</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof Section -->
+    <!-- Field Notes Section -->
     <section class="section social-proof">
         <div class="container">
-            <h2 class="section-title fade-in">Perspectives on Possibility</h2>
-            <p class="section-subtitle fade-in">Timeless reminders to pay attention, imagine deeply, and act boldly.</p>
+            <span class="eyebrow fade-in">Field notes</span>
+            <h2 class="section-title fade-in">Perspectives on possibility</h2>
+            <div class="title-rule"></div>
+            <p class="section-subtitle fade-in">Timeless reminders to pay attention, imagine deeply, and act
+                boldly.</p>
             <div class="testimonials">
                 <div class="testimonial fade-in">
                     <p class="testimonial-text">Even the largest avalanche is triggered by small things.</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">VV</div>
                         <div class="author-info">
                             <h4>Vernor Vinge</h4>
                             <p>science fiction writer, futurist</p>
@@ -840,7 +256,6 @@
                 <div class="testimonial fade-in">
                     <p class="testimonial-text">Paying attention is the only thing that guarantees insight.</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">RW</div>
                         <div class="author-info">
                             <h4>Rob Walker</h4>
                             <p>author, design journalist</p>
@@ -850,7 +265,6 @@
                 <div class="testimonial fade-in">
                     <p class="testimonial-text">Attention without feeling is only a report.</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">MO</div>
                         <div class="author-info">
                             <h4>Mary Oliver</h4>
                             <p>Pulitzer Prize–winning poet</p>
@@ -861,59 +275,137 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <span class="eyebrow fade-in">Questions</span>
+            <h2 class="section-title fade-in">What practitioners ask us</h2>
+            <div class="title-rule"></div>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        Where do the suggestions come from?
+                        <span class="faq-icon">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Signal Scanner scores sources against your key question, and clustering
+                            algorithms propose groupings. Every suggestion waits for you to confirm it, edit
+                            it, or promote it before it becomes part of your project. The thinking is yours.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What happens to my data and my clients' data?
+                        <span class="faq-icon">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your projects are private to your workspace. Inputs, clusters, maps, and future
+                            models are visible only to you, and we never use your work to train
+                            machine-learning models.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        Do I need to adopt your methodology?
+                        <span class="faq-icon">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The five stages give your work structure; how you think inside them is up to you.
+                            Start anywhere, move in any direction, and bring your own vocabulary. A scenario
+                            can come before a system map when that's where your thinking is.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        How is this different from Notion, Miro, or a spreadsheet?
+                        <span class="faq-icon">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A general-purpose workspace holds what you collect. Future Signals also holds the
+                            reasoning: every future traces back through the patterns and signals that produced
+                            it, so the path from observation to conclusion stays visible.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What can I export?
+                        <span class="faq-icon">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every project exports as structured Markdown: inputs, clusters, the system map,
+                            analysis, and future models. Shape it into your own decks, reports, and briefings.
+                            More output formats ship in beta.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What does private alpha mean for me?
+                        <span class="faq-icon">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Free while we build, rough edges included. Alpha practitioners get a direct line to
+                            the founders, and what you tell us shapes the product week to week.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        Can my team use it?
+                        <span class="faq-icon">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Workspaces are single-practitioner today. Collaboration is on the roadmap; tell us
+                            how your team works and you'll help us build it right.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA Section -->
+    <section class="section closing">
+        <div class="container">
+            <span class="eyebrow fade-in">Request access</span>
+            <h2 class="section-title fade-in">Built with practitioners, for practitioners</h2>
+            <div class="title-rule"></div>
+            <p class="closing-copy fade-in">Future Signals is in private alpha. We work closely with a small
+                cohort of foresight practitioners and fold what we learn into the product every week. If you
+                want a hand in shaping it, we'd like to hear about your practice.</p>
+            <div class="closing-cta fade-in">
+                <a href="mailto:sam@aldermanandward.com?subject=Future%20Signals%20access%20request"
+                    class="btn btn-primary">Request access</a>
+                <p class="closing-caption">A short note about your practice is all it takes.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Future Signals</h3>
-                    <p>Empowering innovators to collect signals and build trends for a better tomorrow. Discover
-                        patterns, predict futures, and shape what's next.</p>
+                    <p>A workspace for strategic foresight. Capture inputs, cluster the pattern,
+                        and write futures that inform strategy.</p>
                 </div>
-                <!--
-                <div class="footer-section">
-                    <h3>Product</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Integrations</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                -->
                 <div class="footer-section">
                     <h3>About</h3>
                     <ul class="footer-links">
                         <li><a href="https://aldermanandward.com">About</a></li>
-                        <li><a href="https://app.futuresignals.io/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="https://app.futuresignals.io/terms">Terms and Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Alderman+Ward. All rights reserved.</p>
+                <p>&copy; 2026 Alderman+Ward. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // FAQ Toggle
-        function toggleFAQ(element) {
-            const answer = element.nextElementSibling;
-            const icon = element.querySelector('.faq-icon');
-
-            answer.classList.toggle('active');
-            icon.classList.toggle('rotated');
-        }
+        // Mark JS as available — fade-in hiding is scoped to html.js in the CSS,
+        // so the page renders fully without JS (and in full-page screenshot tools)
+        document.documentElement.classList.add('js');
 
         // Scroll animations
         const observerOptions = {
@@ -934,14 +426,30 @@
             observer.observe(el);
         });
 
+        // Failsafe: reveal everything shortly after load, regardless of scroll
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in').forEach(el => {
+                    el.classList.add('visible');
+                });
+            }, 900);
+        });
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.nextElementSibling;
+                const icon = btn.querySelector('.faq-icon');
+                const open = answer.classList.toggle('active');
+                icon.classList.toggle('rotated', open);
+                btn.setAttribute('aria-expanded', open);
+            });
+        });
+
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-            } else {
-                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-            }
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
         });
 
         // Smooth scrolling for anchor links
@@ -956,17 +464,6 @@
                     });
                 }
             });
-        });
-
-        // Parallax effect for hero background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero::before');
-            const speed = scrolled * 0.5;
-
-            if (parallax) {
-                parallax.style.transform = `translateY(${speed}px)`;
-            }
         });
     </script>
 </body>
